@@ -28,12 +28,12 @@ target/
 .DS_Store
 
 ### Spring Dev Credentials ###
-config/*.yml
+#config/*.yml
 
 ### Docker Test Credentials ###
-.env
+#.env
 
 ### K8s Credentials
-k8s/test/config/config.yaml
-k8s/prod/config/config.yaml
-k8s/uat/config/config.yaml
+#k8s/test/config/config.yaml
+#k8s/prod/config/config.yaml
+#k8s/uat/config/config.yaml
