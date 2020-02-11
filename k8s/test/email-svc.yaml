@@ -6,6 +6,10 @@ kind: Deployment
 metadata:
   name: email-svc-deployment
 spec:
+  selector:
+    matchLabels:
+      app: email-svc
+      env: test
   replicas: 1
   template:
     metadata:

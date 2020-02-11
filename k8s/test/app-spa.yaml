@@ -6,6 +6,10 @@ kind: Deployment
 metadata:
   name: app-spa-deployment
 spec:
+  selector:
+    matchLabels:
+      app: app-svc
+      env: test
   replicas: 1
   template:
     metadata:

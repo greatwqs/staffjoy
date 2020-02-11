@@ -6,6 +6,10 @@ kind: Deployment
 metadata:
   name: bot-svc-deployment
 spec:
+  selector:
+    matchLabels:
+      app: bot-svc
+      env: test
   replicas: 1
   template:
     metadata:

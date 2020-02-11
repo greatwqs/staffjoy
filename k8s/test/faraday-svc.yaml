@@ -7,6 +7,10 @@ kind: Deployment
 metadata:
   name: faraday-svc-deployment
 spec:
+  selector:
+    matchLabels:
+      app: faraday-svc
+      env: test
   replicas: 1
   template:
     metadata:

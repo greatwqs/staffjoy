@@ -6,6 +6,10 @@ kind: Deployment
 metadata:
   name: www-web-deployment
 spec:
+  selector:
+    matchLabels:
+      app: www-svc
+      env: test
   replicas: 1
   template:
     metadata:
