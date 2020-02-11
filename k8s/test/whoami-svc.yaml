@@ -20,7 +20,7 @@ spec:
       containers:
         - name: whoami-svc
           image: boboweike/whoami-svc
-          imagePullPolicy: Never
+          imagePullPolicy: IfNotPresent
           ports:
             - name: http-port
               containerPort: 80
