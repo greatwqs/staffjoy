@@ -20,7 +20,7 @@ spec:
       containers:
         - name: mail-svc
           image: boboweike/mail-svc
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Never
           ports:
             - name: http-port
               containerPort: 80

@@ -20,7 +20,7 @@ spec:
       containers:
         - name: www-svc
           image: boboweike/www-svc
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Never
           ports:
             - name: http-port
               containerPort: 80

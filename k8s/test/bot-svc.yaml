@@ -20,7 +20,7 @@ spec:
       containers:
         - name: bot-svc
           image: boboweike/bot-svc
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Never
           ports:
             - name: http-port
               containerPort: 80
