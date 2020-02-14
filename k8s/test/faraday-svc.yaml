@@ -21,7 +21,7 @@ spec:
       containers:
         - name: faraday-svc
           image: boboweike/faraday-svc
-          imagePullPolicy: Never
+          imagePullPolicy: IfNotPresent
           ports:
             - name: http-port
               containerPort: 80
